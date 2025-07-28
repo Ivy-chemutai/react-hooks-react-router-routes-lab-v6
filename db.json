@@ -1,0 +1,46 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Doctor Strange",
+      "time": 115,
+      "genres": ["Action", "Adventure", "Fantasy"]
+    },
+    {
+      "id": 2,
+      "title": "Black Panther",
+      "time": 134,
+      "genres": ["Action", "Adventure", "Sci-Fi"]
+    },
+    {
+      "id": 3,
+      "title": "Spider-Man: Homecoming",
+      "time": 133,
+      "genres": ["Action", "Adventure", "Sci-Fi"]
+    }
+  ],
+  "directors": [
+    {
+      "id": 1,
+      "name": "Scott Derrickson",
+      "movies": ["Doctor Strange"]
+    },
+    {
+      "id": 2,
+      "name": "Ryan Coogler",
+      "movies": ["Black Panther", "Creed"]
+    }
+  ],
+  "actors": [
+    {
+      "id": 1,
+      "name": "Benedict Cumberbatch",
+      "movies": ["Doctor Strange", "The Imitation Game"]
+    },
+    {
+      "id": 2,
+      "name": "Chadwick Boseman",
+      "movies": ["Black Panther", "42"]
+    }
+  ]
+}

@@ -18,28 +18,21 @@ function Movie() {
 
   if (!movie) {
     return (
-      <div className="app-container">
+      <div>
         <NavBar />
-        <div className="loading">Loading movie magic... ✨</div>
+        <div>Loading...</div>
       </div>
     );
   }
 
   return (
-    <div className="app-container">
+    <div>
       <NavBar />
-      <div className="movie-details">
-        <h1>🎆 {movie.title} 🎆</h1>
-        <p className="movie-time">⏰ {movie.time} minutes</p>
-        <div className="genres-container">
-          <h3>🎨 Genres:</h3>
-          <div>
-            {movie.genres.map((genre, index) => (
-              <span key={index}>{genre}</span>
-            ))}
-          </div>
-        </div>
-      </div>
+      <h1>{movie.title}</h1>
+      <p>{movie.time}</p>
+      {movie.genres.map((genre, index) => (
+        <span key={index}>{genre}</span>
+      ))}
     </div>
   );
 }

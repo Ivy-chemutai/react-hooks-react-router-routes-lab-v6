@@ -15,15 +15,15 @@ function Directors() {
   }, []);
 
   return (
-    <div className="app-container">
+    <div>
       <NavBar />
-      <h1>🎬 Directors Spotlight 🎬</h1>
+      <h1>Directors Page</h1>
       {directors.map(director => (
         <article key={director.id}>
-          <h2>🎭 {director.name}</h2>
+          <h2>{director.name}</h2>
           <ul>
             {director.movies.map((movie, index) => (
-              <li key={index}>🎥 {movie}</li>
+              <li key={index}>{movie}</li>
             ))}
           </ul>
         </article>
